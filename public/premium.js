@@ -1,10 +1,9 @@
-
 // Premium UI enhancements: classier cart toast and improved cart handling
 (function(){
-  // helper: find product by id from global products array
+  // helper: find product by id from global PRODUCTS array
   function findProduct(id){
-    if(typeof products === 'undefined') return null;
-    return products.find(p=>p.id===id) || null;
+    if(typeof window.PRODUCTS === 'undefined') return null;
+    return window.PRODUCTS.find(p => p.id == id) || null; // loose equality allows string/number match
   }
 
   // format price (assumes p is integer cents)
@@ -29,7 +28,8 @@
     t.innerHTML = `
       <img src="${img}" alt="${title}">
       <div class="meta">
-        <div class="desc"> added </div>
+        <div class="title">${title}</div>
+        <div class="desc">${qty} added — ${formatPrice(price)}</div>
       </div>
       <div class="actions">
         <button class="view" data-id="${id}">View Cart</button>
