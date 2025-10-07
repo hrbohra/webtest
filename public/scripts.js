@@ -33,7 +33,7 @@
         <div class="price">${formatPrice(p.price)}</div>
         <div style="margin-top:10px">
           <button class="btn" onclick="addToCart('${p.id}')">Add to cart</button>
-          <a class="btn" href="/cart.html">View cart</a>
+          // <a class="btn" href="/cart.html">View cart</a>
         </div>
       `;
       productListEl.appendChild(card);
