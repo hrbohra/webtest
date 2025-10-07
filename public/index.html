@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bold Biker — Shop</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="font-sans">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">BOLD BIKER</h1>
+      <nav>
+        <a href="/">Shop</a>
+        <a href="/about.html">About</a>
+        <a href="/cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Rugged gear for riders who mean business</h2>
+      <p class="lead">Premium leather, heavy hardware, and designs that shout attitude.</p>
+    </section>
+
+    <section id="product-list" class="product-grid">
+      <!-- Product cards injected by scripts.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Bold Biker</div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script src="/products.js"></script>
+  <script src="/scripts.js"></script>
+</body>
+</html>
