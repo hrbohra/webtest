@@ -30,7 +30,7 @@
       <img src="${img}" alt="${title}">
       <div class="meta">
         <div class="title">${title}</div>
-        <div class="desc">${qty} added — ${formatPrice(price)}</div>
+        <div class="desc">${qty} added </div>
       </div>
       <div class="actions">
         <button class="view" data-id="${id}">View Cart</button>
